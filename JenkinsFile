@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('COMPILE') {
             steps {
-               bat 'javac Hello.java'
+               bat 'javac hello.java'
             }
         }
         stage('RUN') {
             steps {
-               bat 'java Hello'
+               bat 'java hello'
             }
         }
     }
